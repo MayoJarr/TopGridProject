@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 * {
     box-sizing: border-box;
@@ -10,10 +10,10 @@ body {
     background: #222;
     font-family: roboto;
     font-size: 1.2em;
-    font-weight: bold;
+    font-weight: normal;
 }
 .container{
-    height: 1080px;
+    height: 1200px;
     display: grid;
     grid-template: 18% 82% / 20% 80%;
     grid-template-areas: 
@@ -27,6 +27,9 @@ body {
         display: grid;
         grid-template: 50% 50%/ 60% 40%;
         align-items: center;
+        box-shadow: 3px 3px 5px #aaa;
+        font-weight: bold;
+        font-size: 1.3em;
     }
         .search input{
             background: #e2e8f0;
@@ -37,7 +40,8 @@ body {
             margin-left: 70px;
         }
         .not{
-            text-align: end;
+            text-align: center;
+            
         }
         .welcome{
             margin-left: 200px;
@@ -49,6 +53,11 @@ body {
             padding: 10px 30px;
             color: white;
             margin: 0 10px;
+            font-weight: bold;
+            font-size: .8em;
+        }
+        .buttons button:hover{
+            background: #0982c4;
         }
 
     .sidebar{
@@ -57,8 +66,20 @@ body {
         color: white;
         display: flex;
         flex-direction: column;
-        
+        font-size: 1.2em;
+        padding: 20px;
+        line-height: 50px;
     }
+        .logo{
+            font-size: 1.5em;
+            margin: 25px;
+        }
+        .nav{
+            margin: 25px;
+        }
+        .settings{
+            margin: 25px;
+        }
     .sidebar ul{
         list-style-type: none;
         padding: 0px;
@@ -68,10 +89,12 @@ body {
         grid-area: content;
         background: #e2e8f0;
         display: grid;
-        grid-template: 50% 50% /75% 25%;
+        grid-template: 50% 50% /73% 27%;
+        color: #777;
+        padding-top: 20px;
     }
         .projects{
-
+            padding: 20px;
         }
             .pro{
                 display: grid;
@@ -79,19 +102,17 @@ body {
                 grid-column: 1 / 3;
                 grid-row: 1 / 3;
                 grid-gap: 30px;
-                margin: 0 20px;
-                margin-top: 0px;
+                margin-top: 20px;
             }
             .item1{
-                
-            }
-            .item1{
-                border-radius: 15px;
+                border-radius: 12px;
                 background: white;;
                 padding: 35px;
+                box-shadow: 3px 3px 5px #aaa;
+                border-left: 12px solid orange;
             }
         .announ{
-
+            padding-top: 20px;
         }
             .ano{
                 background: white;
@@ -99,28 +120,41 @@ body {
                 flex-direction: column;
                 justify-content: space-around;
                 height: 100%;
-                border-radius: 15px;
+                border-radius: 12px;
+                margin-top: 20px;
+                box-shadow: 3px 3px 5px #aaa;
+                margin-right: 20px;
+                padding: 20px;
+                font-size: .8em;
             }
             .item2{
-                
+                font-family: roboto;
+            }
+            .item21{
+                border-top: 1px solid #333;
+                border-bottom: 1px solid #333;
             }
             .pro2{
-                
+                font-family: roboto;
             }
         .trending{
             grid-column: 2 / 3;
-            padding-top: 50px;
+            padding-top: 80px;
             display: flex;
             flex-direction: column;
         }
             .tren{
                 background: white;
-                height: 100%;
-                border-radius: 15px;
+                height: 80%;
+                border-radius: 12px;
+                padding: 20px;
+                margin-top: 20px;
+                box-shadow: 3px 3px 5px #aaa;
+                margin-right: 20px;
             }
             .item3{
-                
+                font-family: roboto; 
             }
             .pro3{
-
+                font-family: roboto;
             }
